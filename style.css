@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", "Cairo", sans-serif;
+    background:
+        linear-gradient( #494e54 , #2f3031);
+    color: #e5edf7;
+    min-height: 100vh;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 18px;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 760px;
+    background: rgba(33, 36, 40, 0.96);
+    border: 1px solid rgba(125, 177, 220, 0.18);
+    border-radius: 24px;
+    padding: 34px;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
+}
+
+.top-label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #91a9c2;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 28px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 32px;
+}
+
+.profile-photo {
+    width: 142px;
+    height: 142px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #838a8d;
+    padding: 4px;
+    background: #12243a;
+}
+
+.name-block .eyebrow {
+    color: #e1e6e6;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.name-block h1 {
+    color: rgba#f8fbff;
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 7px;
+}
+
+.name-block h2 {
+    color: #a9c2dc;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.divider {
+    color: #84abbc;
+    padding: 0 4px;
+}
+
+.location {
+    color: #8199b3;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.section {
+    margin-top: 25px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 13px;
+}
+
+.section-heading h3 {
+    color: #f2f7fc;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.section-heading h3 span {
+    color: #96aeb8;
+    font-family: "Cairo", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.heading-line {
+    height: 1px;
+    flex: 1;
+    background: rgba(139, 170, 201, 0.2);
+}
+
+.about-text {
+    color: #b4c4d6;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.about-ar {
+    color: #b4c4d6;
+    font-family: "Cairo", sans-serif;
+    font-size: 13px;
+    line-height: 2;
+    margin-top: 8px;
+}
+
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    color: #e6f1f6;
+    background: rgba(132, 142, 147, 0.1);
+    border: 1px solid rgba(147, 165, 172, 0.24);
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-size: 12px;
+    transition: 0.25s ease;
+}
+
+.skill:hover {
+    color: #3a3b3c;
+    background: #576369;
+    transform: translateY(-2px);
+}
+
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-links a {
+    color: #c2d2e2;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(139, 170, 201, 0.18);
+    border-radius: 10px;
+    padding: 9px 14px;
+    font-size: 12px;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.social-links a span {
+    color: #eaebec;
+    margin-left: 4px;
+}
+
+.social-links a:hover {
+    color: #ebeeef;
+    border-color: #e1e5e7;
+    transform: translateY(-2px);
+}
+
+.card-footer {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #eaf4fe;
+    background: linear-gradient(90deg, #3e4e54, #344656);
+    border-radius: 12px;
+    padding: 13px 25px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.contact-button span {
+    font-family: "Cairo", sans-serif;
+    font-size: 12px;
+}
+
+.contact-button strong {
+    font-size: 18px;
+}
+
+.contact-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(246, 243, 243, 0.38)
+}
+
+.footer-note {
+    color: #71879f;
+    font-size: 10px;
+    margin-top: 18px;
+}
+
+
+@media (max-width: 600px) {
+    .page {
+        padding: 22px 12px;
+    }
+
+    .profile-card {
+        padding: 25px 20px;
+        border-radius: 19px;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name-block h1 {
+        font-size: 25px;
+    }
+
+    .section-heading h3 {
+        font-size: 14px;
+    }
+
+    .section-heading h3 span {
+        font-size: 12px;
+    }
+
+    .about-text,
+    .about-ar {
+        font-size: 12px;
+    }
+
+    .skills-list,
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 360px) {
+    .profile-card {
+        padding: 22px 15px;
+    }
+
+    .name-block h1 {
+        font-size: 22px;
+    }
+
+    .section-heading {
+        gap: 8px;
+    }
+}
